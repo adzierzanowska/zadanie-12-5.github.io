@@ -11,13 +11,6 @@ function getQuote() {
     $.ajaxSetup({ cache: false });
 }
 
-$(document).ready(function() {
-    getQuote();
-    $('.trigger').click(function() {
-        getQuote();
-    })
-});
-
 function createTweet(input) {
     var data = input[0];
 
@@ -42,6 +35,12 @@ function createTweet(input) {
 
 }
 
+$(document).ready(function() {
+    getQuote();
+    $('.trigger').click(function() {
+        getQuote();
+    })
+});
 
 
 
